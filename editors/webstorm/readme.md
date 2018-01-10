@@ -4,9 +4,7 @@
 
 1. 下载最新的webstorm，双击按照提示安装webstorm；
 
-2. 安装成功后启动webstorm，输入如下服务器码：
-	http://idea.iteblog.com/key.php
-	http://idea.iteblog.com/key.php
+2. 安装成功后启动webstorm，输入如下服务器码：http://idea.iteblog.com/key.php；
 
 3. 破解后，选择 file -> import setting 将settings.jar导入，即完成样式的设置。
 
