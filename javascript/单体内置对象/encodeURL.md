@@ -31,6 +31,7 @@ http_request.open('GET', url, true);
 ```
 
 ## 使用Javascript对URL进行编/解码
+> URI方法`escape()`、`encodeURIComponent()`、`decodeURI()`和`decodeURIComponent()`用于替换已经被ECMA-262第三版废弃的`escape()` 和 `unescape()`方法。URI方法能够编码所有Unicode字符，而原来的方法只能正确地编码ASCII字符。因此在实际开发时间中，特别是在产品级的代码中，一定要使用URI方法，不要使用`escape()`和`unescape()`方法。
 
 ### escape() && unescape()
 
@@ -72,6 +73,20 @@ var uri = "http%3A%2F%2Fwww.wrox.com%2Fillegal%20value.htm%23start";
 console.log(decodeURIComponent(uri));
 ```
 
-## 实用相关函数
+## 相关实用函数
+* 向现有URL的莫问添加查询字符串参数：
+```
+// url: 要添加参数的url
+// name: 参数的名称
+// value: 参数的值
+function addURLParam(url, name, value) {
+	url += (url.indexOf("?") == -1 ? "?" : "&");
+	url += encodeURLComponent(name) + "=" + encodeURIComponent(value);
+	return url;
+}
+
+var url = "example.php";
+url = addURLParam(url, "name", "Nicholas");
+```
 
 Unicode字符和ASCII字符
