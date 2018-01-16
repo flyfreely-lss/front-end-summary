@@ -13,6 +13,8 @@
  
 * 在 URI 中具有特殊含义的 ASCII 标点符号：; / ? : @ & = + $ , #
 
+* escape不会编码的特殊 ASCII 标点符号：* @ - _ + . / 
+
 ## 常见的URL中使用汉字的四种情况
 ### 情况1：网址路径中包含汉字
 例如：http://zh.wikipedia.org/wiki/春节
@@ -34,6 +36,7 @@ http_request.open('GET', url, true);
 > URI方法`escape()`、`encodeURIComponent()`、`decodeURI()`和`decodeURIComponent()`用于替换已经被ECMA-262第三版废弃的`escape()` 和 `unescape()`方法。URI方法能够编码所有Unicode字符，而原来的方法只能正确地编码ASCII字符。因此在实际开发时间中，特别是在产品级的代码中，一定要使用URI方法，不要使用`escape()`和`unescape()`方法。
 
 ### escape() && unescape()
+`escape()`不能直接用于URL编码，它的真正作用是对字符串进行编码，并返回一个字符串的Unicode编码值。
 
 
 ### encodeURI() && decodeURI()
@@ -73,8 +76,16 @@ var uri = "http%3A%2F%2Fwww.wrox.com%2Fillegal%20value.htm%23start";
 console.log(decodeURIComponent(uri));
 ```
 
+## 使用
+**1. 如果只是编码字符串，和URL没有啥关系，那么用escape。**
+
+**2. 如果你需要编码整个URL，然后需要使用这个URL，那么用encodeURI。**
+
+**3. 当你需要编码URL中的参数的时候，那么encodeURIComponent是最好方法。**
+
+
 ## 相关实用函数
-* 向现有URL的莫问添加查询字符串参数：
+* 向现有URL的末尾添加查询字符串参数：
 ```
 // url: 要添加参数的url
 // name: 参数的名称
@@ -85,8 +96,7 @@ function addURLParam(url, name, value) {
 	return url;
 }
 
+// 使用示例
 var url = "example.php";
 url = addURLParam(url, "name", "Nicholas");
 ```
-
-Unicode字符和ASCII字符
