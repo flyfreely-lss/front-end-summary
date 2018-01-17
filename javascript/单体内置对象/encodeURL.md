@@ -76,7 +76,7 @@ var uri = "http%3A%2F%2Fwww.wrox.com%2Fillegal%20value.htm%23start";
 console.log(decodeURIComponent(uri));
 ```
 
-## 使用
+## 使用总结
 **1. 如果只是编码字符串，和URL没有啥关系，那么用`escape()`。**
 
 **2. 如果你需要编码整个URL，然后需要使用这个URL，那么用`encodeURI()`。**
