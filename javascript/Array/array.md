@@ -1,8 +1,9 @@
 # 常用方法总结
 
-[迭代方法](#%E8%BF%AD%E4%BB%A3%E6%96%B9%E6%B3%95)
-  [Array.every()](##arrayeveryfunctioncurrentvalue-index-arr-thisvalue)
-  [Array.some()](##arraysomefunctioncurrentvalue-index-arr-thisvalue)
+### [迭代方法](#%E8%BF%AD%E4%BB%A3%E6%96%B9%E6%B3%95)
+
+* [Array.every()](#arrayeveryfunctioncurrentvalue-index-arr-thisvalue)
+* [Array.some()](#arraysomefunctioncurrentvalue-index-arr-thisvalue)
 
 ## 迭代方法
 
