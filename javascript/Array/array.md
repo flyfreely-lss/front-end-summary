@@ -42,6 +42,7 @@ var result = numbers.every(function(item, index, array){
 
 console.log(result); // false
 ```
+##
 
 ### `Array.some(function(currentValue, index, arr), thisValue)`
 
