@@ -10,7 +10,7 @@
 
 ## 迭代方法
 
-### `Array.every(function(currentValue, index, arr), thisValue)`
+### Array.every(function(currentValue, index, arr), thisValue)
 
 > `every()` 方法使用指定函数检测数组中的所有元素：
 > * 如果数组中检测到有一个元素不满足，则整个表达式返回 `false` ，且剩余的元素不会再进行检测。
@@ -47,7 +47,7 @@ console.log(result); // false
 ```
 ##
 
-### `Array.some(function(currentValue, index, arr), thisValue)`
+### Array.some(function(currentValue, index, arr), thisValue)
 
 > `some()` 方法会依次执行数组的每个元素：
 > * 如果有一个元素满足条件，则表达式返回 `true` , 剩余的元素不会再执行检测。
