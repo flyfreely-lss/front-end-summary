@@ -1,5 +1,7 @@
 # 常用方法总结
 
+[迭代方法](#arrayeveryfunctioncurrentvalue-index-arr-thisvalue)
+
 ## 迭代方法
 
 ### `Array.every(function(currentValue, index, arr), thisValue)`
