@@ -1,0 +1,41 @@
+# 各种箭头特效
+
+## 通用stylus函数
+
+### * 边框弧度
+border-radius() {
+  -webkit-border-radius: arguments;
+  -moz-border-radius: arguments;
+  border-radius: arguments;
+}
+
+### * 过渡
+transition() {
+  -webkit-transition: arguments;
+  -moz-transition: arguments;
+  -o-transition: arguments;
+  transition: arguments;
+}
+
+### * 转换
+transform() {
+  -webkit-transform: arguments;	/* Safari and Chrome */
+  -moz-transform: arguments;
+  -ms-transform: arguments;		/* IE 9 */
+  -o-transform: arguments;		/* Opera */
+  transform: arguments;
+}
+
+## 空心箭头
+```
+span.rotating_arrow {
+	display:inline-block;
+	border: 2px solid #fff;
+	border-width: 2px 0 0 2px;
+	width: 8px;
+	height: @width;
+	transition: transform .5s;
+}
+```
+
+## 实心箭头
