@@ -2,7 +2,7 @@
 
 ### session概述
 
-#### 以提交表单为例，讲解session的生成过程：
+以提交表单为例，讲解session的生成过程：
 ```
 1. 用户提交包含用户名和密码的表单，发送HTTP请求。
 2. 服务器验证用户发来的用户名密码。
@@ -15,6 +15,7 @@
 ```
 
 ### express-session中间件
+
 >**Note** Session data is not saved in the cookie itself, just the session ID. Session data is stored server-side.
 cookie上存储sessionid，不存储会话数据。会话数据存储在服务器端。
 
