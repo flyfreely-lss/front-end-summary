@@ -1,5 +1,6 @@
-# svg -- 使用marker画箭头
+# svg - 箭头
 
+## 方式一：marker
 ### 步骤一：定义一个marker
 ```
 <defs>
@@ -41,3 +42,5 @@
 `codepen`查看效果: [https://codepen.io/flyfreely-lss/pen/xWWgPz?editors=1100](https://codepen.io/flyfreely-lss/pen/xWWgPz?editors=1100)
 
 总结：`line`中`marker-mid`不起作用，`path`画一条直线也不起作用。
+
+## 方式二：利用三角函数
