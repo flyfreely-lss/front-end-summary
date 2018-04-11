@@ -55,7 +55,7 @@
 
 根据三角函数可得出直线上各点坐标如下：
 ```
-a: (x3 - Math.sqrt(3)/2 * l * cosα, y3 - Math.sqrt(3)/2 * l * sinα)
+a: (x3 - √3/2 * l * cosα, y3 - √3/2 * l * sinα)
 b: (x3 - l * cos(α + 30°), y3 - x3 - l * sin(α + 30°))
 c: (x3 - l * cos(30° - α), x3 - l * sin(30° - α))
 d: (x3, y3)
