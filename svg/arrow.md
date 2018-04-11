@@ -50,7 +50,7 @@
 2. 直线与x轴水平方向的夹角：α = Math.atan2(y2 - y1, x2 - x1)
 
 根据三角函数可得出直线上各点坐标如下：
-![arrow]()
+![arrow](https://github.com/flyfreely-lss/front-end-summary/blob/master/image/svg/arrow.jpg)
 ```
 a: (x3 - Math.sqrt(3)/2 * l * cosα, y3 - Math.sqrt(3)/2 * l * sinα)
 b: (x3 - l * cos(α + 30°), y3 - x3 - l * sin(α + 30°))
