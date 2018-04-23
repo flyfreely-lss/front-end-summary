@@ -92,7 +92,7 @@ console.log(decodeURIComponent(uri));
 // value: 参数的值
 function addURLParam(url, name, value) {
 	url += (url.indexOf("?") == -1 ? "?" : "&");
-	url += encodeURLComponent(name) + "=" + encodeURIComponent(value);
+	url += encodeURIComponent(name) + "=" + encodeURIComponent(value);
 	return url;
 }
 
