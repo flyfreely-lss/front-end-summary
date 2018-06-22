@@ -228,3 +228,5 @@ DragDrop.addHandler("dragend", function (event) {
   status.innerHTML += "<br>Dropped " + event.target.id + " at (" + event.x + "," + event.y + ")";
 });
 
+
+
