@@ -32,3 +32,4 @@
 参考链接
 * [数字签名是什么？](http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html) 
 * [密码学笔记](http://www.ruanyifeng.com/blog/2006/12/notes_on_cryptography.html) 
+* [前端敏感数据加密方案及实现](https://cloud.tencent.com/developer/article/1738898)
